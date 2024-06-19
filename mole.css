@@ -1,0 +1,45 @@
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-image: url("./mario-bg.jpg");
+      background-size: cover;
+      /* cover the entire body with img    */
+}
+
+#board{
+    width: 540px;
+    height: 540px;
+    background-image: url("./soil.png");
+    background-size: cover; 
+    /* cover the entire board with img  */
+    border: 3px solid white;
+    border-radius: 25px;
+
+    margin:0 auto; 
+    /* all childs will sit centrally    */
+    display:flex;
+    flex-wrap: wrap;
+    /* childs will sit left to right , top to bottom  */
+}
+
+#board div {
+    /* board = 540*540 , tile will be 180*3 length and breadth */
+    width: 180px;
+    height: 180px;
+    background-image: url(./pipe.png);
+    background-size: cover;
+}
+
+#board div img{
+    /* all image tags inside te tile div */
+    width: 100px;
+    height:100px;
+
+    /* to make images not slectable */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
